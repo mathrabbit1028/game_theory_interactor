@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h1 {
+  color: #333;
+}
+
+button {
+  cursor: pointer;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+}
+
+button:hover {
+  background-color: #888888;
+}
+
+#result {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+img {
+  width: 10%; /* 원하는 너비 */
+  height: auto; /* 자동으로 높이 조정 */
+}
+
+.transparent {
+  opacity: 0.0; 
+}
+
+#stones {
+  border: 5px solid #ff0000;
+  padding: 30px;
+}
