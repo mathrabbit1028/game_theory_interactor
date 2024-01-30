@@ -7,5 +7,5 @@ SSHS 2023 과학나눔봉사
 ## 게임 목록
 - Nim Game (베스킨라빈스 31)
 - Ultimate Tic Tac Toe
-- Box game
-- Hackenbush
+- ~~Box game~~
+- Hackenbush (modifing https://github.com/meiji163/hackenbush)
