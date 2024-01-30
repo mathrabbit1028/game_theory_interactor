@@ -21,10 +21,26 @@ button {
   background-color: #000000;
   color: #fff;
   border: none;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
 }
-
 button:hover {
   background-color: #888888;
+}
+
+button#red {
+  background-color: #ff0000
+}
+button#red:hover {
+  background-color: #880000;
+}
+
+button#blue {
+  background-color: #0000ff
+}
+button#blue:hover {
+  background-color: #000088;
 }
 
 #result {

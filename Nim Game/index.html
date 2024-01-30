@@ -8,12 +8,18 @@
 <body onload="reset()">
   <div class="container">
     <h1>베스킨라빈스 31</h1>
+    <h2>더 이상 가져갈 돌이 없으면 진다!</h2>
     <p id="count"></p>
     <div id="stones"></div>
     <br>
-    <button onclick="take(1)">1개</button>
-    <button onclick="take(2)">2개</button>
-    <button onclick="take(3)">3개</button>
+    <button class="take" onclick="take(1)">1개</button>
+    <button class="take" onclick="take(2)">2개</button>
+    <button class="take" onclick="take(3)">3개</button>
+    <span style="margin: 30px"></span>
+    <button class="take" onclick="take(1)">1개</button>
+    <button class="take" onclick="take(2)">2개</button>
+    <button class="take" onclick="take(3)">3개</button>
+    <br>
     <br>
     <button onclick="reset()">RESET</button>
     <h2 id="result"></h2>

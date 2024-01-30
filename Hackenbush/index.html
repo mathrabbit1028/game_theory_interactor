@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Hackenbush</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script type="module" src="./src/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+		<h1>Hackenbush</h1>
+        <div class="menubar">
+            <button class="level">Game1</button>
+            <button class="level">Game2</button>
+            <button class="level">Game3</button>
+            <button id="restart">RESET</button>
+        </div>
+        <div class="svg-container">
+			<div style="margin-top: 20px">
+				<strong><span class="player" id="p1">Player 1</span></strong>
+				<strong><span class="player" id="p2">Player 2</span></strong>
+			</div>
+            <svg width="900" height="600"></svg>
+        </div>
+    </div>
+	<div id="message"></div>
+</body>

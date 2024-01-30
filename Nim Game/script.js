@@ -1,8 +1,10 @@
 const stoneDiv = document.getElementById('stones');
-const result = document.getElementById("result");
+const result = document.getElementById('result');
+const buttons = document.getElementsByClassName("take");
 let turn = 0
 
 function reset() {
+    turn = 0;
     cnt = 31;
     update();
     result.textContent = "";
@@ -37,8 +39,28 @@ function update() {
         stoneDiv.appendChild(img);
         if (i % 10 == 0) stoneDiv.appendChild(document.createElement('br'))
     }
-    if (turn) stoneDiv.style.borderColor = 'blue';
-    else stoneDiv.style.borderColor = 'red';
+    if (turn) {
+        stoneDiv.style.borderColor = 'blue';
+        for (let i = 0; i < 3; i++) {
+            buttons[i].id = '';
+            buttons[i].onclick = '';
+        }
+        for (let i = 3; i < 6; i++) {
+            buttons[i].id = 'blue';
+            buttons[i].onclick = function() { take(i-2); };
+        }
+    }
+    else {
+        stoneDiv.style.borderColor = 'red';
+        for (let i = 0; i < 3; i++) {
+            buttons[i].id = 'red';
+            buttons[i].onclick = function() { take(i+1); };
+        }
+        for (let i = 3; i < 6; i++) {
+            buttons[i].id = '';
+            buttons[i].onclick = '';
+        }
+    }
 }
 
 function gameOver() {
